@@ -10,7 +10,7 @@ const propertyConfig = [
     id: "property1",
     name: "Airbnb Beach House",
     color: "#ff6b6b",
-    icalUrl: "https://www.airbnb.co.in/calendar/ical/24141820.ics?s=634ccb4112a23f53d9bc62685323312e"
+    icalUrl: "https://corsproxy.io/?https://www.airbnb.co.in/calendar/ical/24141820.ics?s=634ccb4112a23f53d9bc62685323312e"
   },
   {
     id: "property2",
