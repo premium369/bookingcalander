@@ -7,6 +7,12 @@ import { RRule } from "rrule";
 import { parseICS } from "ical.js";
 import axios from "axios";
 
+const fetchICalData = async (icalUrl) => {
+  const response = await fetch(`/api/fetch-ical?url=${encodeURIComponent(icalUrl)}`);
+  if (!response.ok) throw new Error('Failed to fetch iCal');
+  return await response.text();
+};
+
 const App = () => {
   const [properties, setProperties] = useState(() => {
     const stored = localStorage.getItem("calendar-properties");
